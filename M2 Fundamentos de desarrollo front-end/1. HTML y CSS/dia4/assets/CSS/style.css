@@ -1,0 +1,74 @@
+
+.encabezado {
+    overflow: auto; /* Clearfix */
+    }
+.imagen {
+        float: left; /* Imagen a la izquierda */
+        margin-right: 20px; /* Espacio entre la imagen y el texto */
+        width: 200px;
+    }
+
+.texto {
+        overflow: hidden; /* Evitar que el texto flote alrededor de la imagen */
+    }
+
+#titulo {
+    font-size: 20pt;
+    }
+#nombre{
+    font-size: 24pt;
+    font-style: italic;
+    }
+
+.seccion1 {
+    overflow: auto; /* Clearfix */
+    }
+.indice {
+    float: left; 
+    width: 30%; /* Ancho relativo para el índice */
+    }
+.resumeen {
+    float: right; 
+    width: 70%; /* Ancho relativo para el resumen */
+    }
+
+.seccion2 {
+    overflow: auto; /* Clearfix */
+    }
+.datos {
+    float: left; 
+    width: 30%; /* Ancho relativo para el índice */
+    }
+.ed {
+    float: right; 
+    width: 70%; /* Ancho relativo para el resumen */
+    }
+    
+
+.seccion3 {
+    overflow: auto; /* Clearfix */
+    }
+.softwaress {
+    float: left; 
+    width: 25%; /* Ancho relativo para el índice */
+    margin-right: 5%;
+    }
+.practica {
+    float: right; 
+    width: 70%; /* Ancho relativo para el resumen */
+    }
+
+    
+    
+.seccion4 {
+    overflow: auto; /* Clearfix */
+    }
+.idiomas {
+    float: left; 
+    width: 30%; /* Ancho relativo para el índice */
+    }
+.cursos {
+    float: right; 
+    width: 70%; /* Ancho relativo para el resumen */
+    }
+        
