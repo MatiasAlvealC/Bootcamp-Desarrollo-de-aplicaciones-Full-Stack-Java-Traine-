@@ -1,0 +1,104 @@
+body {
+    background-color: #000000;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.header-section .titulo{
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#imagen-iguana-section {
+    padding: 0; 
+    margin: 0px;
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+#imagen-iguana-section div {
+    text-align: center; /* Alinea la imagen al centro */
+}
+
+
+.desc-section {
+    display: table; /* Hace que el contenedor actúe como una tabla */
+    width: 100%; /* Ancho total del contenedor */
+    padding: 100px;
+    text-align: center;
+}
+
+.texto-descripcion-section,
+.desc-section img {
+    display: table-cell; /* Hace que los elementos se comporten como celdas de tabla */
+    vertical-align: top; /* Alinea los elementos en la parte superior */
+    padding: 0 25px; /* Añade un espacio interno para separación */
+}
+
+.texto-descripcion-section {
+    width: 50%; /* Ancho del área del texto */
+    text-align: left;
+}
+
+.desc-section img {
+    width: 50%; /* Ancho del área de la imagen */
+}
+.texto-descripcion{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#icons-section{
+    text-align: center; /* Centra todo el contenido */
+    padding: 80px; /* Agrega padding alrededor del contenido */
+    background: #1E1A13 0% 0% no-repeat padding-box;
+    opacity: 0.98;
+}
+#icons-section div {
+    display: inline-block; /* Alinea los elementos en línea */
+    margin: 0 80px; 
+}
+
+#icons-section i {
+    display: block; /* Hace que los íconos sean elementos de bloque */
+    margin-top: 25px;
+    margin-bottom: 25px; /* Espacio entre los íconos y los párrafos */
+    font-size: 70px;
+}
+
+#icons-section p {
+    margin: 0; /* Elimina el margen predeterminado de los párrafos */
+}
+#icons-section h2 {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 50px; /* Tamaño de letra más grande para el título */
+}
+#mas-imagenes-section div {
+    text-align: center; /* Alinea los elementos hijos al centro */
+    padding: 100px;
+}
+
+#mas-imagenes-section img {
+    display: inline-block; /* Hace que las imágenes se muestren en línea */
+    width: 250px; /* Establece el ancho máximo para cada imagen */
+    margin: 10px; /* Agrega un margen entre las imágenes */
+    vertical-align: top; /* Alinea las imágenes en la parte superior */
+}
+
+#mas-imagenes-section #primera-imagen-masimg-seccion{
+    width: 290px;
+} 
+
+#footer-section {
+    text-align: center; /* Centra el contenido del footer */
+    padding: 20px; /* Añade un padding alrededor del contenido */
+    background: #1e1a13 0% 0% no-repeat padding-box;
+    opacity: 0.94;   
+}
+
+#footer-section p{
+    font-weight: 300;
+}
