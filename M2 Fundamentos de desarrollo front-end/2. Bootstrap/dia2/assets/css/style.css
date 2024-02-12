@@ -1,0 +1,152 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+/* Estilos para el fondo rosa del encabezado */
+.cabecera {
+    background-color: #e83e8c; /* Cambia el color de fondo del encabezado a rosa */
+}
+
+/* Estilos para la imagen del logo */
+.navbar-brand img {
+    width: 100%; 
+    max-width: 200px; 
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+/* Estilos para los elementos de navegación */
+.navbar-nav .nav-link {
+    color: #fff; 
+    margin-left: 20px;
+}
+
+
+
+.menu {
+    text-align: center; 
+    padding: 20px;
+  }
+  
+.menu h1 {
+    font-weight: bold;
+    color: #707070;
+    font-size: 80px;
+
+
+  }
+  
+.card {
+    margin: 30px; 
+}
+
+.card-title {
+    text-align: left; 
+    font-weight: bold;
+  }
+  
+  /* Estilos para el texto de la tarjeta */
+  .card-text {
+    text-align: left; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limita el texto a dos líneas */
+    overflow: hidden;
+  }
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 576px) {
+    .menu h1 {
+      font-size: 24px; /* Reducir el tamaño del título para dispositivos móviles */
+    }
+  
+    .card {
+      margin: 10px; /* Reducir el margen entre las tarjetas para dispositivos móviles */
+    }
+  }
+  
+  /* Media queries para tabletas */
+  @media (min-width: 576px) and (max-width: 992px) {
+    .menu .row {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 768px; /* Reducir el ancho máximo para las tarjetas en tabletas */
+    }
+  }
+  
+  /* Media queries para dispositivos grandes */
+  @media (min-width: 992px) {
+    .menu .row {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 960px; /* Establecer un ancho máximo para las tarjetas en dispositivos grandes */
+    }
+  }
+  
+
+footer {
+    text-align: center; 
+}
+
+
+.footer1{
+    background-color:#17a2b8 ;
+    font-size: 1.2em; 
+    font-weight: bold;
+    padding: 40px;
+
+}
+
+.footer1 p {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 250%;
+    display: inline-block; /* Hace que el párrafo y los iconos estén en línea */
+    margin-right: 100px; /* Agrega espacio entre el texto y los iconos */
+}
+.footer1 i {
+    font-size: 300%; /* Tamaño de los iconos */
+    margin-right: 1%; /* Agrega espacio entre los iconos */
+}
+
+.footer2{
+    background-color:#e83e8c;
+    padding: 10px;
+}
+
+.footer2 img {
+    width: 70px; /* Ancho fijo para la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .cabecera img {
+        max-width: 150px; /* Reducir el ancho máximo de la imagen para dispositivos móviles */
+    }
+    .menu h1 {
+        font-size: 40px; /* Reducción del tamaño del texto para dispositivos móviles */
+        flex-direction: column;
+    }
+    .footer1 p {
+        font-size: 1.5em; /* Reducir tamaño del texto en dispositivos pequeños */
+        margin-right: 5px; /* Reducir espacio entre texto e iconos en dispositivos pequeños */
+    }
+    
+    .footer1  {
+        display: none; /* Ocultar la sección del texto e iconos en pantallas pequeñas */
+
+    }
+    
+    .footer2 img {
+        width: 80px; /* Reducir tamaño de imagen en dispositivos pequeños */
+    }
+}
+
+
