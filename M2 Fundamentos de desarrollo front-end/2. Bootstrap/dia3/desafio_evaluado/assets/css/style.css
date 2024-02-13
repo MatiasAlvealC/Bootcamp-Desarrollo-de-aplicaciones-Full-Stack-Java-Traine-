@@ -1,0 +1,140 @@
+body {
+    font-family: "Roboto", sans-serif; /* Aplica la fuente Roboto al cuerpo del documento */
+}
+
+.roboto-light {
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-weight: 500;
+    font-style: normal;
+}
+.navbar-brand img {
+    width: 100%; 
+    max-width: 200px; 
+}
+
+
+
+.cabecera {
+    background-color: #28A745;
+}
+.navbar-nav {
+    margin-left: auto; 
+}
+
+/* Estilos para los elementos de navegación */
+.navbar-nav .nav-link {
+    color: #fff; 
+    margin-left: 20px;
+}
+.menu {
+    text-align: center; 
+    padding: 20px;
+  }
+.card {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    margin: 30px; 
+
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #707070;
+}
+.location {
+    display: inline-flex; /* Establece el contenedor como flexbox en línea */
+    align-items: baseline; /* Alinea los elementos en la parte inferior del contenedor */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #707070;
+}
+
+
+.location i {
+    margin-right: 5px; /* Añade un pequeño margen a la derecha del icono */
+}
+
+.precios {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor flex */
+    align-items: baseline; /* Alinea los elementos en la misma línea base */
+}
+    
+
+.precios p {
+    margin-right: 10px; /* Añade un pequeño margen a la derecha del icono */
+}
+
+
+.rebaja {
+    color: #28A745;
+    font-size: 2em; 
+}
+
+.forma {
+    background-color: #28A745; /* Color de fondo verde */
+    padding: 20px; /* Espacio alrededor del contenido */
+    color: #fff; /* Color de texto blanco */
+    text-align: center; /* Alineación del contenido al centro */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los grupos de formulario */
+}
+
+input[type="Nombre"],
+input[type="Correo Electrónico"] {
+    width: 70%; /* Ancho del input reducido */
+    padding: 10px; /* Espacio interno del input */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde del input */
+}
+
+button[type="submit"] {
+    width: 30%; /* Ancho del botón reducido */
+    padding: 10px; /* Espacio interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Borde del botón */
+    background-color: #fff; /* Color de fondo blanco */
+    color: #000; /* Color de texto verde */
+    cursor: pointer; /* Cursor apuntador al pasar sobre el botón */
+}
+
+button[type="submit"]:hover {
+    background-color: #28A745; /* Cambio de color al pasar el cursor */
+}
+
+footer {
+    background-color: #FFFFFF; /* Color de fondo del footer */
+    color: #707070; /* Color de texto del footer */
+    padding: 20px 0; /* Espacio interior del footer (arriba y abajo) */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+footer p {
+    margin-bottom: 10px; /* Espacio entre los párrafos */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+footer img {
+    width: 15%; /* Ancho máximo de la imagen para que se ajuste al contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+
+@media (max-width: 768px) {
+    .cabecera img {
+        max-width: 150px; /* Reducir el ancho máximo de la imagen para dispositivos móviles */
+    }
+    .btn-enviar {
+        font-size: 0.9rem; /* Tamaño de fuente reducido para dispositivos móviles */
+        padding: 8px 16px; /* Espacio interno del botón reducido */
+    }
+}
