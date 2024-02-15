@@ -1,0 +1,43 @@
+.container {
+    margin: 20px;
+}
+
+h1 {
+    color: black;
+    font-size: 24px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info p {
+    color: black;
+    font-size: 16px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.styled-table th, .styled-table td {
+    border-bottom: 1px solid black; /* Agrega un borde inferior a cada celda */
+    padding: 8px;
+}
+
+.styled-table th {
+    border-top: 1px solid black; /* Agrega un borde superior a las celdas del encabezado */
+    background-color: black; /* Fondo negro para las celdas del encabezado */
+    color: white; /* Texto blanco para las celdas del encabezado */
+}
+
+.styled-table tbody tr:last-child td {
+    border-bottom: none; /* Elimina el borde inferior de la última fila */
+}
+
+.styled-table tbody td {
+    background-color: white; /* Fondo blanco para las celdas del cuerpo */
+    color: black; /* Texto negro para las celdas del cuerpo */
+}
+
