@@ -1,0 +1,336 @@
+body {
+    font-family: "Cabin", sans-serif; /* Aplica la fuente Roboto al cuerpo del documento */
+}
+
+/* HEADER */
+.cabecera {
+    background-color: #373A3C;
+}
+.navbar-nav {
+    margin-left: auto; 
+}
+
+/* Estilos para los elementos de navegación */
+
+.cabecera .navbar-nav .nav-link{
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+
+}
+.cabecera .navbar-brand {
+    margin-left: 20px;
+    margin-right: auto;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.cabecera a{
+    color: #FFFFFF;
+}
+
+/* Media query para tamaño xs */
+@media (max-width: 767.98px) {
+    .cabecera .navbar-brand{
+        font-size:50px;
+        padding: 0px;
+        margin-left: 0px;
+    }
+}
+
+/*  PRIMERA SECCION, IMAGEN MAS TEXTO */    
+
+/* Estilos para la línea en tamaño xs */
+.linea-xs{
+    display: none; /* Ocultar la línea por defecto */
+    border-top: 2px solid black; /* Línea de 2 píxeles de grosor */
+    margin-bottom: 10px; /* Espacio entre la línea y el elemento siguiente */
+    margin-top: 10px;
+}
+.linea-md{
+    border-top: 2px solid black; /* Línea de 2 píxeles de grosor */
+    margin-bottom: 10px; /* Espacio entre la línea y el elemento siguiente */
+    margin-top: 10px;
+    margin-left: 580px;
+
+}
+
+
+.image-texto .container {
+    overflow: hidden; /* Clearfix para limpiar el float */
+    display: flex; /* Utilizamos flexbox */
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
+.imagen-texto img {
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    max-width: 45%; /* La imagen se adapta al tamaño del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.texto-pizza {
+    flex: 1; /* El texto ocupará todo el espacio restante */
+    margin-top: 40px;
+    margin-left: 20px;
+    text-align: left; /* Justificamos el texto a la izquierda */
+}
+
+.texto-pizza h1,
+.texto-pizza h2 {
+    text-align: left; /* Justificamos el texto a la izquierda */
+    color: #373A3C;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;}
+.texto-pizza h2{
+    font-size: 120%;
+}
+
+
+.boton1,
+.boton2 {
+    background-color: transparent;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    border: 3px solid #DDDDDD; /* Margen de color gris */
+    color: #373A3C; /* Color del texto */
+    padding: 10px 20px; /* Espacio interno del botón */
+    margin-right: 20px; /* Espacio entre los botones */
+    cursor: pointer; /* Tipo de cursor */
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+  
+.boton1 .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 4%;
+    margin-left: -60px;
+  }
+
+  .boton2 .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+  }
+.boton1 .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  .boton2 .tooltiptext::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  
+.boton1:hover .tooltiptext,
+.boton2:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+/* Media query para tamaño xs */
+@media (max-width: 767.98px) {
+    .linea-xs {
+        display: block; /* Mostrar la línea en tamaño xs */
+    }
+    .linea-md{
+        margin-left: 0px;
+    }
+    .imagen-texto img {
+        max-width: 95%; /* La imagen se adapta al tamaño del contenedor */
+        height: auto; /* Altura automática para mantener la proporción */
+        align-items: center; /* Centramos verticalmente los elementos */
+    }
+
+    .texto-pizza h1,
+    .texto-pizza h2,
+    .contenedor-botones {
+    text-align: center; 
+    }
+    .texto-pizza{
+        text-align: center;
+    }
+}
+
+/* carrousel */
+
+
+.linea-dd{
+    border-top: 2px solid black; /* Línea de 2 píxeles de grosor */
+    margin-bottom: 10px; /* Espacio entre la línea y el elemento siguiente */
+    margin-left: 110px;
+    margin-right: 110px;
+}
+/* Recetas */
+
+.receta .container{
+    overflow: hidden; 
+    text-align: left; /* Centramos verticalmente los elementos */
+
+}
+
+.receta h2 {
+    border-bottom: 1px solid black; /* Grosor y color de la línea */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin-bottom: 20px; /* Espacio entre el título y el contenido */
+    font-size: 100%;
+    cursor: pointer;
+
+}
+
+/* Por defecto, las columnas ocupan el 50% del ancho */
+.columna {
+width: 50%;
+float: left;
+color: #373A3C;
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+}
+
+/* Media query para pantallas extra pequeñas */
+@media (max-width: 576px) {
+.columna {
+    width: 100%; /* Cambia el ancho al 100% en pantallas extra pequeñas */
+    float: none; /* Quita el float para que las columnas se apilen verticalmente */
+}
+}
+
+
+
+/* recetas relacionadas */
+
+
+.linea-receta{
+    display: block; /* Ocultar la línea por defecto */
+    border-top: 2px solid black; /* Línea de 2 píxeles de grosor */
+    margin-bottom: 10px; /* Espacio entre la línea y el elemento siguiente */
+    margin-top: 10px;
+}
+
+
+.recetas-relacionadas h1{
+    color: #373A3C;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.recetas-relacionadas .card-title{
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    color: #373A3C;
+}
+.recetas-relacionadas .card-text{
+    color: #373A3C;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.recetas-relacionadas .card-text {
+    display: none;
+}
+.recetas-relacionadas .card-title {
+    cursor: pointer;
+}
+
+
+
+/*contacto */
+.contacto {
+    background-color: #DC3545; /* Color de fondo para el contenedor de contacto */
+    text-align: center; /* Centrar el contenido dentro del contenedor */
+    padding: 100px; /* Agregar un relleno al contenedor si es necesario */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
+    height: 500px; /* Ajusta la altura según sea necesario */
+}
+
+.container {
+    margin: auto; /* Centra el contenedor horizontalmente */
+    max-width: 800px; /* Establece un ancho máximo para el contenedor */
+    padding: 20px; /* Agregar un relleno interno al contenedor si es necesario */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
+    text-align: center;
+}
+
+#p1{
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 2.5em; /* Tamaño de fuente ajustado */
+    margin-bottom: 20px; /* Espacio entre el párrafo p1 y p2 */}
+#p2{
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    color : #FFFFFF;
+    font-size: 2em; /* Tamaño de fuente ajustado */
+}
+
+.ricomida{
+    font-family: "Lobster", sans-serif;
+
+}
+
+.boton3 {
+    background-color: transparent;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    border: 1px solid #FFFFFF; /* Margen de color gris */
+    color:#FFFFFF; /* Color del texto */
+    padding: 10px 80px; /* Espacio interno del botón */
+}
+
+/* Media query para pantallas extra pequeñas */
+@media (max-width: 575.98px) {
+    #p1 {
+        font-size: 2em; /* Tamaño de fuente ajustado para pantallas xs */
+    }
+
+    #p2 {
+        font-size: 1.5em; /* Tamaño de fuente ajustado para pantallas xs */
+    }
+}
+
+/* footer*/
+
+.footer-section{
+    background-color: #373A3C;
+    text-align: center;
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
+    padding: 10px 0; /* Espacio interior del footer (arriba y abajo) */
+
+}
+.footer-section p{
+    font-family: "Lobster", sans-serif;
+    color : #FFFFFF;
+    font-size: 2em;
+}
