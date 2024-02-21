@@ -1,0 +1,333 @@
+
+/* HEADER */
+.cabecera {
+    background-color: #373A3C;
+}
+.navbar-brand img {
+    width: 100%; 
+    max-width: 200px; 
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+/* Estilos para los elementos de navegación */
+
+.cabecera .navbar-nav .nav-link{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+
+}
+
+
+.cabecera a{
+    color: #FFFFFF;
+}
+
+@media (max-width: 767.98px) {
+    .cabecera .navbar-brand{
+        font-size:50px;
+        padding: 0px;
+        margin-left: 0px;
+    }
+}
+
+/*Presentacion  */
+#presentacion {
+    position: relative;
+}
+
+.imagen-texto {
+    position: relative;
+}
+
+.imagen-presentacion {
+    width: 100%;
+    height: 600px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Para ajustar la imagen y cubrir el contenedor */
+    background-size: cover;
+    background-position: center;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 42%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 20px;
+    color: white;
+    width: 70%; /* Ajusta el ancho del contenedor del texto */
+}
+
+
+.texto-superpuesto h1 {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    text-align: right;
+    line-height: 1.2;
+    font-size: 5em
+}
+
+.texto-superpuesto h1 span {
+    display: block;
+}
+
+.texto-superpuesto p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-align: right;
+    font-size: 1.2em;
+    white-space: pre-line; /* Mantener saltos de línea del texto */
+}
+#contenedor-botones {
+    text-align: right; /* Alinea los botones hacia la derecha */
+}
+.boton1,
+.boton2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    padding: 10px 20px; /* Espacio interno del botón */
+    margin-right: 20px; /* Espacio entre los botones */
+    cursor: pointer; /* Tipo de cursor */
+    position: relative;
+    display: inline-block;
+    margin-left: auto; /* Justificar hacia la derecha */
+}
+
+
+.boton1 {
+    background-color: transparent;
+    border: 2px solid #17A2B8; /* Margen de color gris */
+    color: #FFFFFF; /* Color del texto */
+}
+.boton2 {
+    background-color: #17A2B8;
+    border: 3px solid #17A2B8; /* Margen de color gris */
+    color: #FFFFFF; /* Color del texto */
+}
+
+    
+@media (max-width: 576px) {
+    .texto-superpuesto {
+        top:10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    .texto-superpuesto h1 {
+        font-size: 3em;
+    }
+
+    .texto-superpuesto p {
+        font-size: 1em;
+    }
+}
+
+/* Acerca */
+
+.Acerca {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Acerca h1,
+.Acerca h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+
+.Acerca h1{
+    font: normal normal bold 50px/59px Raleway;
+}
+
+.Acerca p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    white-space: pre-line; /* Mantener saltos de línea del texto */
+
+}
+
+
+.p-ocultar {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limita el texto a dos líneas */
+    line-height: 1.5; /* Altura de línea para asegurar el espaciado adecuado */
+}
+
+
+
+/* CSS para ajustar el tamaño de los iconos y agregar espacio después de ellos */
+.iconos i {
+    margin-top: 40px;
+    font-size: 40px; /* Tamaño del icono */
+}
+
+.iconos h2 {
+    margin-top: 20px; /* Margen superior para separar el título del icono */
+}
+
+.iconos p {
+    margin-top: 20px; /* Margen superior para separar el párrafo del título */
+    margin-bottom: 80px;
+}
+
+
+@media (min-width: 768px) {
+    /* Estilo para pantallas mayores o iguales a md */
+    .p-ocultar {
+        display: block; /* Asegura que el texto completo se muestre en pantallas mayores o iguales a md */
+        -webkit-line-clamp: initial; /* Restablece el número de líneas para pantallas mayores o iguales a md */
+    }
+}
+
+
+/* Trabajos */
+
+.trabajos {
+    background: #17A2B8 0% 0% no-repeat padding-box;
+    text-align: center;
+}
+
+.trabajos h1 {
+    font: normal normal bold 50px/59px Raleway;
+    color:#FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.card-img-top {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 250px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Escala la imagen para que llene el contenedor */
+}
+
+
+.card-title{
+    color: #0F0F0F;
+    font: normal normal bold 26px/30px Raleway;
+    text-align: left;
+}
+
+.card-text {
+    font: normal normal normal 16px/24px Raleway;
+    color:#0F0F0F;
+    text-align: left;
+}
+.boton3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Tipo de cursor */
+    position: relative;
+    display: inline-block;
+    margin-left: auto; /* Justificar hacia la derecha */
+    background-color: transparent;
+    border: 2px solid #56C0E0; /* Margen de color gris */
+    color: #56C0E0; /* Color del texto */
+}
+
+.contedor-b3 {
+    text-align: left; /* Alinea los botones hacia la derecha */    
+}
+
+.card {
+    margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .boton3 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        padding: 10px 20px; /* Espacio interno del botón */
+        cursor: pointer; /* Tipo de cursor */
+        position: relative;
+        display: inline-block;
+        margin-left: auto; /* Justificar hacia la derecha */
+        background-color: transparent;
+        border: 2px solid #A2CAC1; /* Margen de color gris */
+        color: #0F0F0F; /* Color del texto */
+    }
+}
+
+/* Contacto */
+
+
+.contacto {
+    padding: 20px; /* Espacio alrededor del contenido */
+    text-align: center; /* Alineación del contenido al centro */
+    margin-bottom: 40px;
+}
+
+.contacto h1{
+    font: normal normal bold 50px/59px Raleway;
+    color: #000000;
+}
+.contacto p {
+    font: normal normal normal 16px/25px Raleway;
+    color: #000000;
+    letter-spacing: 0.32px;
+}
+.form-group label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font: normal normal bold 16px/19px Raleway;
+    color: #373A3C;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="textarea"] {
+    font: normal normal normal 16px/19px Raleway;
+    color: #818A91;
+}
+
+#inputMensaje {
+    font: normal normal normal 16px/19px Raleway;
+    color: #818A91;
+}
+.form-group {
+    margin-bottom: 15px; /* Agrega un margen en la parte inferior de cada grupo de formulario */
+}
+
+
+.boton4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Tipo de cursor */
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin-left: auto; /* Justificar hacia la derecha */
+    background-color: #17A2B8;
+    border: 2px solid #17A2B8; /* Margen de color gris */
+    color: #FFFFFF; /* Color del texto */
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #0F0F0F;
+    text-align: center;
+    color:#FFFFFF;
+    padding: 20px 0; /* Espacio interior del footer (arriba y abajo) */
+}
+footer p{
+    margin-top: 10px;
+    font: normal normal normal 16px/25px Raleway;
+}
+
+
+@media (max-width: 768px) {
+    footer p{
+        font-size: 1.3em;
+    }
+}
