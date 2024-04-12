@@ -29,10 +29,13 @@ public class Patrones {
 		System.out.printf("\n");
 		// patron 2
 		System.out.println("Patron 2: ");
-		String pat2="1234";
-		for (int i =0;i<n;i++) {
-			System.out.print(pat2);
-		}
+		int cont=1;
+		do {
+			for (int i=1;i<=4 && cont <= n;i++) {
+				System.out.print(i);
+				cont++;
+			}
+		} while (cont<=n);
 		
 		System.out.printf("\n");
 		

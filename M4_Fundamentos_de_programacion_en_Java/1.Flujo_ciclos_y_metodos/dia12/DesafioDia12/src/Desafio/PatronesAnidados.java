@@ -89,7 +89,6 @@ public class PatronesAnidados {
 				}
 				else {
 					System.out.printf(" ");
-
 				}
 			}
 			System.out.printf("\n");
