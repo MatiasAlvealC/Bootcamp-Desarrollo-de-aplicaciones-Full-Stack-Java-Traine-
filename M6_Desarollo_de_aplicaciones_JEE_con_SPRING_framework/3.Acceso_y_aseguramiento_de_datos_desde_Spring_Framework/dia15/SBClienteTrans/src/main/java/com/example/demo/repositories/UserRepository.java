@@ -1,0 +1,16 @@
+package com.example.demo.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.models.Users;
+
+@Repository
+public interface UserRepository extends JpaRepository<Users, Long> {
+	
+	Users findByEmail(String email);
+	Users findByName(String name);
+	Users findByNameAndEmail(String name, String email);
+	int countByName(String name);
+
+}
